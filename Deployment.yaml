@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - name: my-app-container
-        image: gonesharathchandragone/nodeecom:appv1
+        image: gonesharathchandragone/nodeecom:myapp6
         ports:
         - containerPort: 3000
 ---
