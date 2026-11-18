@@ -2,6 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: my-app-deployment
+  namespace: dev
 spec:
   replicas: 3
   selector:
@@ -14,7 +15,7 @@ spec:
     spec:
       containers:
       - name: my-app-container
-        image: gonesharathchandragone/nodeecom
+        image: gonesharathchandragone/nodeecom:appv1
         ports:
         - containerPort: 3000
 ---
